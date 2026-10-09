@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,900');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: #333333;
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+main {
+    position: relative;
+    width: 72%;
+    height: 533px;
+    margin: 75px auto;
+    overflow: hidden;
+    border-radius: 12px;
+    background-image: url("images/food-image-bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    position: absolute;
+    top: 42px;
+    left: 40%;
+    margin: 0;
+    color: #ffffff;
+    font-size: 44px;
+    line-height: 1.1;
+    font-weight: 900;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.recipies-info {
+    position: absolute;
+    top: 46px;
+    left: 12%;
+    display: flex;
+    gap: 30px;
+}
+
+.recipies-info p {
+    margin: 0;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 900;
+    line-height: 1.4;
+}
+
+.recipies-info span {
+    color: #b5c640;
+}
+
+.btn-primary {
+    position: absolute;
+    top: 80px;
+    left: 25.5%;
+    padding: 7px 19px;
+    border: 2px solid #ffffff;
+    border-radius: 25px;
+    background: transparent;
+    color: #ffffff;
+    font-family: "Lato", sans-serif;
+    font-size: 12px;
+    font-weight: 900;
+    text-transform: lowercase;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    border-color: #b5c640;
+    background-color: #b5c640;
+}
+
+.prep-steps {
+    position: absolute;
+    top: 115px;
+    left: 40%;
+    right: 5%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.step {
+    margin: 0 0 22px;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 1.35;
+}
+
+@media (max-width: 900px) {
+    main {
+        width: 92%;
+        height: auto;
+        min-height: 700px;
+        margin: 25px auto;
+        background-position: left center;
+    }
+
+    .recipies-info {
+        top: 25px;
+        left: 6%;
+        gap: 15px;
+    }
+
+    .btn-primary {
+        top: 65px;
+        left: 6%;
+    }
+
+    h1 {
+        top: 190px;
+        left: 6%;
+        right: 5%;
+        white-space: normal;
+        font-size: 32px;
+    }
+
+    .prep-steps {
+        top: 250px;
+        left: 6%;
+        right: 6%;
+    }
+
+    .step {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+}
